@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(pics/35.jpg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1600px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity: 0.64;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .main{
+        height: 80vh;
+    }
+    .main .box{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        height: 90vh;
+    }
+    .main .box{
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main{
+        height: 95vh;
+    }
+    .main .box{
+        height: 95vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .main{
+        height: 105vh;
+    }
+    .main .box{
+        height: 105vh;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .main{
+        height: 110vh;
+    }
+    .main .box{
+        height: 110vh;
+    }
+}
+.nav{
+    display: flex;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    height: 62px;
+}
+
+.nav span{
+    color: rgb(229, 9, 20);
+    font-size: 40px;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :first-child{
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+    .hero > :first-child{
+        font-size: 38px;
+    }
+}
+
+.seperation{
+    height: 8px;
+    background-color: rgba(87, 87, 87, 0.479);
+}
+
+.btn-red-sm{
+    background-color: rgb(229, 9, 20);
+    border: 1px solid rgb(229, 9, 20);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-red{
+   background-color: rgb(229, 9, 20); 
+   color: #fff;
+   font-size: 24px;
+   font-weight: 500;
+   min-height: 56px;
+   padding: 12px 24px;
+   border-radius: 5px;
+   margin-left: 10px;
+   border: 1px solid rgb(229, 9, 20);
+   cursor: pointer;
+}
+
+.main input{
+    padding: 12px 24px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(246, 238, 238, 0.3);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+    .main input{
+        padding: 16px 9px;
+        font-size: 20px;
+    }
+    .btn-red{
+        font-size: 18px;
+        padding: 12px 16px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn-red{
+        margin-left: 0px;
+        font-size: 24px;
+    }
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85vw;
+    margin: auto;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 570px) {
+    .first{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+.second{
+    margin-bottom: 80px;
+}
+
+.fourth{
+    margin-top: 50px;
+}
+
+.first > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.first > div :first-child{
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.first > div :nth-child(2){
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.first > div :nth-child(3){
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.first > div :nth-child(4){
+    font-size: 24px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1050px) {
+    .first > div :first-child{
+        font-size: 38px;
+    }
+    .first > div :nth-child(2){
+        font-size: 22px;
+    }
+    .first > div :nth-child(3){
+        font-size: 22px;
+    }
+    .first > div :nth-child(4){
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .first > div :first-child{
+        font-size: 34px;
+    }
+    .first > div :nth-child(2){
+        font-size: 22px;
+    }
+    .first > div :nth-child(3){
+        font-size: 22px;
+    }
+    .first > div :nth-child(4){
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .first > div :first-child{
+        font-size: 30px;
+    }
+    .first > div :nth-child(2){
+        font-size: 20px;
+    }
+    .first > div :nth-child(3){
+        font-size: 20px;
+    }
+    .first > div :nth-child(4){
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .first > div :first-child{
+        font-size: 25px;
+    }
+    .first > div :nth-child(2){
+        font-size: 18px;
+    }
+    .first > div :nth-child(3){
+        font-size: 18px;
+    }
+    .first > div :nth-child(4){
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .first > div :first-child{
+        font-size: 30px;
+    }
+    .first > div :nth-child(2){
+        font-size: 20px;
+    }
+    .first > div :nth-child(3){
+        font-size: 20px;
+    }
+    .first > div :nth-child(4){
+        font-size: 20px;
+    }
+}
+
+.secimg{
+    position: relative;
+}
+
+.secimg img{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}    
+
+@media screen and (max-width: 1000px) {
+    .secimg img{
+        width: 395px;
+    }
+    .secimg video{
+        top: 61px;
+        right: 21px;
+        width: 321px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .secimg img{
+        width: 375px;
+    }
+    .secimg video{
+        top: 61px;
+        right: 21px;
+        width: 303px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .secimg img{
+        width: 325px;
+    }
+    .secimg video{
+        top: 61px;
+        right: 21px;
+        width: 261px;
+    }
+}
+
+.secimg video{
+    position: absolute;
+    top: 56px;
+    right: 20px;
+}
+
+.faq{
+    background-color: black;
+    color: #fff;
+    padding: 34px;
+    margin-top: 40px;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 32px;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 800px) {
+    .faq h2{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .faq h2{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .faq h2{
+        font-size: 26px;
+    }
+}
+
+.faqbox{
+    display: flex;
+    background-color: rgb(65,65,65);
+    padding: 28px;
+    max-width: 70vw;
+    margin: 10px auto;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1850px) {
+    .faqbox{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .faqbox{
+        font-size: 15px;
+        max-width: 75vw;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .faqbox{
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .faqbox{
+        max-width: 85vw;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .faqbox{
+        max-width: 90vw;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .faqbox{
+        max-width: 95vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .faqbox{
+        max-width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .faqbox{
+        max-width: 105vw;
+    }
+}
+
+.heading{
+    padding: 5px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 520px) {
+    .heading{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .heading{
+        font-size: 18px;
+    }
+}
+
+.faqbox > span:nth-child(2){
+    justify-content: end;
+    color: aqua;
+    text-align: end;
+}
+
+.plus{
+    padding-top: 0px;
+    color: #fff;
+    cursor: pointer;
+    justify-content: end;
+    font-size: 35px;
+}
+
+.faqbox:hover{
+    background-color: dimgrey;
+}
+
+.about{
+    padding-bottom: 60px;
+}
+
+.about span{
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
+
+.about div input{
+    padding: 12px 24px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid rgba(246, 238, 238, 0.3);
+}
+
+@media screen and (max-width: 580px) {
+    .hero-about{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .about div input{
+        padding: 12px 12px;
+        font-size: 20px;
+    }
+}
+
+footer{
+    color: #fff;
+    max-width: 60vw;
+    margin: auto;
+    padding: 80px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #fff;
+}
+
+.footer a{
+    color: #fff;
+    font-size: 14px;
+    gap: 23px;
+    padding: 10px;
+}
+
+.footer .footer-item{
+    display: flex;
+    flex-direction: column;
+}
+
+footer span a{
+    position: relative;
+    left: 8px;
+    color: #fff;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .uper-footer{
+        margin: 50px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .uper-footer{
+        margin: 26px;
+        padding: 5px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .uper-footer{
+        margin: 8px;
+        padding: 5px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .uper-footer{
+        margin: 0px;
+        padding: 5px;
+        margin-top: 60px;
+    }
+}
+
+.last{
+    position: relative;
+    left: 8px;
+    color: #fff;
+    top: 15px;
+    padding-bottom: 100px;
+}
